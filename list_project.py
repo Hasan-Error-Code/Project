@@ -1,7 +1,7 @@
-lis = ["Hasan", "AI-Quest", "Django", 23]
+lis = ["Hasan", "AI-Quest", "Django", "23"]
 
 while True:
-    user = int(input("What do you want:\nChose a number: 1.Read, 2.Add, 3.Delete, 4.Update, 5.Quite :"))
+    user = int(input("What do you want:\nChose a number: 1.Read, 2.Add, 3.Delete, 4.Update, 5.Quite: "))
     if user == 1:
         print(f"You Chose: 1 {lis}")
         break
@@ -18,8 +18,8 @@ while True:
     elif user == 4:
         print(lis)
     
-        rmv = input("What you want update: ")
-        uv = input("Input new item: ")
+        rmv = str(input("What you want update: "))
+        uv = str(input("Input new item: "))
         if rmv in lis:
             l = lis.index(rmv)
             lis[l] = uv
