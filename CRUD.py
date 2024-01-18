@@ -6,18 +6,18 @@ while True:
         print(f"You Chose: 1 {lis}")
         break
     elif user == 2:
-        print("You Chose: 2 ",lis.append(input("Add value: ")))
+        print("You Chose: 2 ", lis.append(input("Add value: ")))
         print("After add new item: ",lis)
         break
     elif user == 3:
         print(lis)
-        rm = str(input("What you want to temove: "))
-        print("You Chose: 3 ",lis.remove(rm))
+        rm = str(input("What you want to remove: "))
+        print("You Chose: 3 ", lis.remove(rm))
         print(f"After delete {rm}: ",lis)
         break
     elif user == 4:
         print(lis)
-    
+
         rmv = str(input("What you want update: "))
         uv = str(input("Input new item: "))
         if rmv in lis:
